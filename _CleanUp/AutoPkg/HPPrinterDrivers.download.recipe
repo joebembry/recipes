@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.download.HPPrinterDrivers</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>HPPrinterDrivers</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.n8felton.download.HPPrinterDrivers</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>com.github.n8felton.shared/HPSoftwareInfoProvider</key>
+			<dict>
+				<key>git_hash</key>
+				<string>57ad085f9d99c99a0c164c9c1005b1e20f204fbc</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.n8felton-recipes/SharedProcessors/HPSoftwareInfoProvider.py</string>
+				<key>sha256_hash</key>
+				<string>2fa78e366f2d368f7efee0fbafe58c8992b7197c5136d9da540cc438357683ea</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.n8felton.download.HPPrinterDrivers</key>
+			<dict>
+				<key>git_hash</key>
+				<string>ff05ca181c1c0ba74473e15295e6e89cd2675021</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.n8felton-recipes/HPPrinterDrivers/HPPrinterDrivers.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>d8b09e1187e54c082c73e2490e65bbba09833ba4184dc9f3578d79de5c82fb73</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

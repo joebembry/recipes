@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jss.VLC</string>
+	<key>Input</key>
+	<dict>
+		<key>ARCHITECTURE</key>
+		<string>universal</string>
+		<key>CATEGORY</key>
+		<string>Media</string>
+		<key>GROUP_NAME</key>
+		<string>%NAME%-update-smart</string>
+		<key>GROUP_TEMPLATE</key>
+		<string>SmartGroupTemplate.xml</string>
+		<key>NAME</key>
+		<string>VLC</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Testing</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>PolicyTemplate.xml</string>
+		<key>POLICY_TRIGGER</key>
+		<string>Install_VLC</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>Install the latest version of %NAME%.</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>VLC.png</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.novaksam.jss.VLC</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.VLC</key>
+			<dict>
+				<key>git_hash</key>
+				<string>1b4ba2cfe6d1f6de304bc9c29b57df6602b2e7e6</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/VLC/VLC.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>e74a96c65488d34aabb247c171b57db7fed8afd67b61fffdce8f46bc54d35f18</string>
+			</dict>
+			<key>com.github.autopkg.pkg.VLC</key>
+			<dict>
+				<key>git_hash</key>
+				<string>fe5ced1ce7f937d31dc3fb9a8a27e1fa5b2b8961</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/VLC/VLC.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>845212cea5957bb44996f70acba03fb278e8d8d81d68edabb94d64946e734f25</string>
+			</dict>
+			<key>com.github.novaksam.jss.VLC</key>
+			<dict>
+				<key>git_hash</key>
+				<string>6a093011429d47b5c63e7583125670a494330797</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.novaksam-recipes/VLC/VLC.jss.recipe</string>
+				<key>sha256_hash</key>
+				<string>8699c1e0a43aa22e5963a61898e0b6dc287afd3a704033699d8370e63038827c</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jss.GitHubDesktop</string>
+	<key>Input</key>
+	<dict>
+		<key>BUILD</key>
+		<string>darwin</string>
+		<key>BUNDLE_ID</key>
+		<string>com.github.GitHub</string>
+		<key>CATEGORY</key>
+		<string>Development</string>
+		<key>DESCRIPTION</key>
+		<string>GitHub Desktop is an application that enables you to work with projects hosted on GitHub and GitHub Enterprise.</string>
+		<key>GROUP_NAME</key>
+		<string>%NAME%-update-smart</string>
+		<key>GROUP_TEMPLATE</key>
+		<string>%RECIPE_DIR%/GitHubDesktopSmartGroupTemplate.xml</string>
+		<key>ICON</key>
+		<string>%RECIPE_DIR%/GitHubDesktop.png</string>
+		<key>JSS_INVENTORY_NAME</key>
+		<string>GitHub Desktop.app</string>
+		<key>NAME</key>
+		<string>GitHub Desktop</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Testing</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>%RECIPE_DIR%/PolicyTemplate.xml</string>
+		<key>version</key>
+		<string></string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.rtrouton.jss.GitHubDesktop</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.download.GitHubDesktop</key>
+			<dict>
+				<key>git_hash</key>
+				<string>929f09a8dc248349e9ce35f7d519c253298317d1</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/GitHub/GitHubDesktop.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>ddd466175cff624508787263a470f89b7c2dcc517e1d5cc381f59ec06c846012</string>
+			</dict>
+			<key>com.github.homebysix.pkg.GitHubDesktop</key>
+			<dict>
+				<key>git_hash</key>
+				<string>dab19d8c72d5b4d2bab35a25dfd43d2e4ab15173</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/GitHub/GitHubDesktop.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>8bfa208120d6372efa61b1043046f6a08ef896e0d4c07a0853cd3f532026c798</string>
+			</dict>
+			<key>com.github.rtrouton.jss.GitHubDesktop</key>
+			<dict>
+				<key>git_hash</key>
+				<string>7616f15fc53f80a0455b007625e8edd6194d8efd</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/JSS/GitHubDesktop.jss.recipe</string>
+				<key>sha256_hash</key>
+				<string>c3cf52543ad002791684b5d0ba4e2f4608108ae2be8903d11ddac1d435d7ba22</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

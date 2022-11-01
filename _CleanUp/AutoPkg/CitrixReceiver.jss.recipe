@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jss.CitrixReceiver</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Utilities</string>
+		<key>GROUP_NAME</key>
+		<string>#DEP -- FASM</string>
+		<key>GROUP_TEMPLATE</key>
+		<string>SmartGroupTemplate.xml</string>
+		<key>NAME</key>
+		<string>Citrix Receiver</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Utilities</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>PolicyTemplateSelfService.xml</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>11 Citrix Receiver is client software that allows universal access to virtual applications and desktops.</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>Citrix Receiver.png</string>
+		<key>pkg_path</key>
+		<string></string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.jss-recipes.jss.CitrixReceiver</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.pkg.CitrixReceiver</key>
+			<dict>
+				<key>git_hash</key>
+				<string>fc656ee04d2c503a2faaf1047b3d553cb4cf0da5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Citrix/CitrixReceiver.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>65996d8a82a2d88efda19deb4c1a0774e72a3e1efc9c1ec143b24abc72c531b4</string>
+			</dict>
+			<key>com.github.jss-recipes.jss.CitrixReceiver</key>
+			<dict>
+				<key>git_hash</key>
+				<string>ae77ebdeb3f6663e1fd79b165ed85e48a4deec06</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jss-recipes/Citrix Receiver/Citrix Receiver.jss.recipe</string>
+				<key>sha256_hash</key>
+				<string>8a9e99d6b588eba2df570d7e40fb3336d39088a8485943441fce4b048f6033c1</string>
+			</dict>
+			<key>io.github.hjuutilainen.download.CitrixReceiver</key>
+			<dict>
+				<key>git_hash</key>
+				<string>e1ec6d91f8459851c521981a23da453bc975a18d</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.hjuutilainen-recipes/CitrixReceiver/CitrixReceiver.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>a9e9f44486eb834368871718f9a7eb2d311bf96cd69b2243c2935f8884244fd1</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

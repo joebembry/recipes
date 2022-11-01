@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jss.Filezilla</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Internet</string>
+		<key>GROUP_NAME</key>
+		<string>%NAME%-update-smart</string>
+		<key>GROUP_TEMPLATE</key>
+		<string>SmartGroupTemplate.xml</string>
+		<key>NAME</key>
+		<string>FileZilla</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Testing</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>PolicyTemplateSelfService.xml</string>
+		<key>RE_PATTERN</key>
+		<string>&lt;a href="(?P&lt;url&gt;http[s]?.*?(?P&lt;filename&gt;FileZilla_(?P&lt;version&gt;[\d.]+)_macosx-x86.*?\.tar\.bz2).*?)\"</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>FileZilla is a fast and reliable cross-platform FTP, FTPS and SFTP client.</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>%NAME%.png</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.scriptingosx.jss.FileZilla</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.keeleysam.recipes.FileZilla.download</key>
+			<dict>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.keeleysam-recipes/FileZilla/FileZilla.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>b15020b65348699d1846e082e8baf60d0138ee29e8d353e027ff3ff97ae9011c</string>
+			</dict>
+			<key>com.github.scriptingosx.jss.FileZilla</key>
+			<dict>
+				<key>git_hash</key>
+				<string>3cfcdc60326d81ef3b7d021f3352d27402c551ac</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.scriptingosx-recipes/FileZilla/FileZilla.jss.recipe</string>
+				<key>sha256_hash</key>
+				<string>27d2a650af382c3087e46bff4af9dd3f8663672e21bf2789b35e4979cebbc1ad</string>
+			</dict>
+			<key>com.github.scriptingosx.pkg.FileZilla</key>
+			<dict>
+				<key>git_hash</key>
+				<string>b23ae29f333c3d2aeff100fdf430f4d6a65b9048</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.scriptingosx-recipes/FileZilla/FileZilla.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>cdee022dea311a1f96a26050fa8a1a138e573050fb598e28aeb455bfa386b503</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

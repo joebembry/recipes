@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jamf.AndroidStudio-Intel</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Utilities</string>
+		<key>GROUP_NAME</key>
+		<string>Android Studio-update-smart</string>
+		<key>GROUP_TEMPLATE</key>
+		<string>JamfSmartGroupTemplate.xml</string>
+		<key>NAME</key>
+		<string>Android Studio</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Testing</string>
+		<key>POLICY_NAME</key>
+		<string>Install Latest %NAME%</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>JamfPolicyTemplate.xml</string>
+		<key>SEARCH_PATTERN</key>
+		<string>(https\://redirector\.gvt1\.com/edgedl/android/studio/install/.+/android-studio.+\.dmg)</string>
+		<key>SEARCH_URL</key>
+		<string>https://developer.android.com/studio</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>Install the latest version of Android Studio.</string>
+		<key>SELF_SERVICE_DISPLAY_NAME</key>
+		<string>Install Latest %NAME%</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>%NAME%.png</string>
+		<key>TESTING_GROUP_NAME</key>
+		<string>Testing</string>
+		<key>UPDATE_PREDICATE</key>
+		<string>pkg_uploaded == False</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.grahampugh-recipes.jamf.AndroidStudio</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>com.github.autopkg.novaksam-recipes.Processors/MinimumOSExtractor</key>
+			<dict>
+				<key>git_hash</key>
+				<string>a6d8a60fd9ee8abf1a331ebb9d220d50fc2f284c</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.novaksam-recipes/Processors/MinimumOSExtractor.py</string>
+				<key>sha256_hash</key>
+				<string>4df6bf8295979ef8f9fc3d6c22596e5418e06a1d1957910e9f7aeb60728aa251</string>
+			</dict>
+			<key>com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d1834bfeeba8ff3a9cef947cbbabcf201e65d29b</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahampugh-recipes/JamfUploaderProcessors/JamfComputerGroupUploader.py</string>
+				<key>sha256_hash</key>
+				<string>5d0489fd9e664bc80563ba3f74df242746ccd6641985381ab1b2ad310aa373d0</string>
+			</dict>
+			<key>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d1834bfeeba8ff3a9cef947cbbabcf201e65d29b</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahampugh-recipes/JamfUploaderProcessors/JamfPackageUploader.py</string>
+				<key>sha256_hash</key>
+				<string>e3ca359fe843365a34e5dc542b17d3ad7d57e50a57f2fc36ba0fd43638748d89</string>
+			</dict>
+			<key>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</key>
+			<dict>
+				<key>git_hash</key>
+				<string>1a4a757f904d39499e93f4a36a3dfa26500b6ae0</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahampugh-recipes/JamfUploaderProcessors/JamfPolicyUploader.py</string>
+				<key>sha256_hash</key>
+				<string>870fb35ce8b024bb14140f896ac7096f3fbc3a7365a5d42d651d66fb57f5ba2c</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.grahampugh-recipes.jamf.AndroidStudio</key>
+			<dict>
+				<key>git_hash</key>
+				<string>e60222ace3c6799ed00785298b7407aeb9eb3c41</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahampugh-recipes/Jamf_Recipes/AndroidStudio.jamf.recipe</string>
+				<key>sha256_hash</key>
+				<string>3760a5bfeab4e7a5368d5944c87e737c716d6efec5af8a5c132c26f16962e875</string>
+			</dict>
+			<key>com.github.novaksam.download.AndroidStudio</key>
+			<dict>
+				<key>git_hash</key>
+				<string>de7d102f6fb22428561449050339617fae5822d1</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.novaksam-recipes/Recipes - Download/AndroidStudio.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>8b81a2d8eae6e8dc0f20523fbc1e5c903e3688c4a93178451525a86d30ca3d4a</string>
+			</dict>
+			<key>com.github.novaksam.pkg.AndroidStudio</key>
+			<dict>
+				<key>git_hash</key>
+				<string>317410696a2577136f9b2d05d28e22f864bd3727</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.novaksam-recipes/Recipes - pkg/AndroidStudio.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>025e9526bfd7005bfb5c6ab0fdbc51eeb83ea08dec25d27ca5bf2c8bb78adcf1</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

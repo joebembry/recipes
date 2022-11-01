@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jss.Google Chrome</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Productivity</string>
+		<key>DOWNLOAD_URL</key>
+		<string>https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg</string>
+		<key>GROUP_NAME</key>
+		<string>All computers</string>
+		<key>GROUP_TEMPLATE</key>
+		<string>SmartGroupTemplate-MinimumOS.xml</string>
+		<key>NAME</key>
+		<string>Google Chrome</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Productivity</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>PolicyTemplateSelfService.xml</string>
+		<key>POLICY_TRIGGER</key>
+		<string>install-LatestChrome</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>Install the latest version of %NAME%.</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>Google Chrome.png</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.novaksam.jss.GoogleChrome</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>com.github.autopkg.novaksam-recipes.Processors/MinimumOSExtractor</key>
+			<dict>
+				<key>git_hash</key>
+				<string>a6d8a60fd9ee8abf1a331ebb9d220d50fc2f284c</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.novaksam-recipes/Processors/MinimumOSExtractor.py</string>
+				<key>sha256_hash</key>
+				<string>4df6bf8295979ef8f9fc3d6c22596e5418e06a1d1957910e9f7aeb60728aa251</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.googlechrome</key>
+			<dict>
+				<key>git_hash</key>
+				<string>b0efb8ccf082444c2e7f3774134352a3c5dbafc8</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/GoogleChrome/GoogleChrome.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>2bdc3f2e3cbdca9c01181f97f5483554a22c48cc078a9c170e57bb6fd2a4d676</string>
+			</dict>
+			<key>com.github.autopkg.pkg.googlechrome</key>
+			<dict>
+				<key>git_hash</key>
+				<string>f29f399c54adee7122e9fdc3c1ea7ed4c67388a4</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/GoogleChrome/GoogleChrome.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>5acdf716353ccc57f021008bc5b4b55a5cb4e578e0f96864b71d4d2d29742ec8</string>
+			</dict>
+			<key>com.github.novaksam.jss.GoogleChrome</key>
+			<dict>
+				<key>git_hash</key>
+				<string>c91ab3988f21369d274dad96bb820e03cc9abf31</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.novaksam-recipes/Google Chrome/Google Chrome.jss.recipe</string>
+				<key>sha256_hash</key>
+				<string>8bfefe811b378f425a238c4e6e8b4c527af683666f018393c5dd1cb0a1617266</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

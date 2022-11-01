@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jss.VMwareHorizonClient</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Virtualization</string>
+		<key>DESCRIPTION</key>
+		<string>VMware Horizon Client for Mac allows you to connect to your VMware Horizon virtual desktop from your Mac.</string>
+		<key>GROUP_NAME</key>
+		<string>%NAME%-update-smart</string>
+		<key>GROUP_TEMPLATE</key>
+		<string>%RECIPE_DIR%/SmartGroupTemplate.xml</string>
+		<key>HORIZON_MAJOR_VERSION</key>
+		<string>horizon_8</string>
+		<key>ICON</key>
+		<string>%RECIPE_DIR%/VMwareHorizonClient.png</string>
+		<key>JSS_INVENTORY_NAME</key>
+		<string>VMware Horizon Client.app</string>
+		<key>NAME</key>
+		<string>VMwareHorizonClient</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Testing</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>%RECIPE_DIR%/PolicyTemplate.xml</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.rtrouton.jss.VMwareHorizonClient</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.rtrouton.jss.VMwareHorizonClient</key>
+			<dict>
+				<key>git_hash</key>
+				<string>7616f15fc53f80a0455b007625e8edd6194d8efd</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/JSS/VMwareHorizonClient.jss.recipe</string>
+				<key>sha256_hash</key>
+				<string>729f4ae4ee1ef5f90e1599e5fa806486ca760003d21b9b50469e38a8509086f5</string>
+			</dict>
+			<key>com.github.rtrouton.pkg.VMwareHorizonClient</key>
+			<dict>
+				<key>git_hash</key>
+				<string>bedc43f7b1f2ec7c600eedc42f0ca57e5b4e293a</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/VMwareHorizonClient/VMwareHorizonClient.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>3de3f38a5436cb7de761f2fbac618e1317c546be843da380ff90680ca1503fe8</string>
+			</dict>
+			<key>com.github.scriptingosx.download.VMwareHorizonClient</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d8bbf679d2233a7914d9a47bd4cd18897c002d02</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.scriptingosx-recipes/VMwareHorizonClient/VMwareHorizonClient.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>5705be62e529ab32bd0c91b4de4f762bc88db0c3a47fe92b617ec4e8fe04b469</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

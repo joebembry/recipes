@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jss.Privileges</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Utilities</string>
+		<key>DESCRIPTION</key>
+		<string>Privileges is an application for macOS which is designed to grant and remove admin rights from the logged-in user account</string>
+		<key>GROUP_NAME</key>
+		<string>%NAME%-update-smart</string>
+		<key>GROUP_TEMPLATE</key>
+		<string>%RECIPE_DIR%/SmartGroupTemplate.xml</string>
+		<key>ICON</key>
+		<string>%RECIPE_DIR%/Privileges.png</string>
+		<key>INSTALLERSCRIPTS</key>
+		<string>Scripts</string>
+		<key>NAME</key>
+		<string>Privileges</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Testing</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>%RECIPE_DIR%/PolicyTemplate.xml</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.rtrouton.jss.privileges</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.rtrouton.download.privileges</key>
+			<dict>
+				<key>git_hash</key>
+				<string>5d746a137799de02e10b2d169458ce362c9fb9e4</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/Privileges/Privileges.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>1e8a22a1c2ef2723d9138722fdf40aecf0a376888f73dc3be7999bc5d8c5dd0d</string>
+			</dict>
+			<key>com.github.rtrouton.jss.privileges</key>
+			<dict>
+				<key>git_hash</key>
+				<string>7616f15fc53f80a0455b007625e8edd6194d8efd</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/JSS/Privileges.jss.recipe</string>
+				<key>sha256_hash</key>
+				<string>29b041410c1d2e07ea05919a343373095bf0555773611838ff4dbac07963f4f9</string>
+			</dict>
+			<key>com.github.rtrouton.pkg.privileges</key>
+			<dict>
+				<key>git_hash</key>
+				<string>a530903fad69863f3b79a9dc5ccb23f76954b861</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/Privileges/Privileges.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>36691e7a4a77806c341052265fee835a2b3c7894429c00c47a69e3dcab32c8c4</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

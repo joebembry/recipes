@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jss.VisualStudioCode</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Productivity</string>
+		<key>DOWNLOAD_URL</key>
+		<string>https://go.microsoft.com/fwlink/?LinkID=2156837</string>
+		<key>GROUP_NAME</key>
+		<string>%NAME%-update-smart</string>
+		<key>GROUP_TEMPLATE</key>
+		<string>SmartGroupTemplate.xml</string>
+		<key>NAME</key>
+		<string>Visual Studio Code</string>
+		<key>PKG_ID</key>
+		<string>com.microsoft.VSCode</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Testing</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>PolicyTemplateSelfService.xml</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>Visual Studio for Mac is a modern, sophisticated IDE with many features for creating mobile, desktop, and web applications.</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>vscode.png</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.killahquam.jss.visualstudiocode</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.killahquam.download.visualstudiocode</key>
+			<dict>
+				<key>git_hash</key>
+				<string>e1c6fdbc3e80fb0f8b3e29ca6c9ed38067d9f17e</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.killahquam-recipes/VisualStudioCode/VisualStudioCode.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>661e58dc573b5f48e073d95b537934a36c3033da9316a7ba92d1848ccc49b5e0</string>
+			</dict>
+			<key>com.github.killahquam.jss.visualstudiocode</key>
+			<dict>
+				<key>git_hash</key>
+				<string>3395f78787a03be8ccf11780d5e5e6924bb0953e</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.killahquam-recipes/VisualStudioCode/VisualStudioCode.jss.recipe</string>
+				<key>sha256_hash</key>
+				<string>1c5fb3c5e617469587e13493c7242a97d022acb93812ada2982ca49e8ba00906</string>
+			</dict>
+			<key>com.github.killahquam.pkg.visualstudioscode</key>
+			<dict>
+				<key>git_hash</key>
+				<string>ce9a1b9baf9f364ff0669aeb4d738160a10856e2</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.killahquam-recipes/VisualStudioCode/VisualStudioCode.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>8a4bbcc4fd5c1a1dce6ebc4be5691f72332d3e284800f9c3ac3bba30afd76594</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

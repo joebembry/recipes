@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jss.Pacifist</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://www.charlessoft.com/cgi-bin/pacifist_download.cgi?type=dmg</string>
+		<key>NAME</key>
+		<string>Pacifist</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.arubdesu.pkg.Pacifist</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.arubdesu.download.Pacifist</key>
+			<dict>
+				<key>git_hash</key>
+				<string>a1e024195905a956ec4ff35212444cebbb88c251</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.arubdesu-recipes/Pacifist/Pacifist.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>15c39f8573f0e8469a8f0ef4b4b2e06b950437ea04213d6b5c17cecc1ec8fdd3</string>
+			</dict>
+			<key>com.github.arubdesu.pkg.Pacifist</key>
+			<dict>
+				<key>git_hash</key>
+				<string>57e13f6a0302051b7b1e16f6a2f9ed57142614f8</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.arubdesu-recipes/Pacifist/Pacifist.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>68275bc3e0dfddc7b4e1b09382bf36f5d830d8a5bbdacb4ddbdcc70631a6451d</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

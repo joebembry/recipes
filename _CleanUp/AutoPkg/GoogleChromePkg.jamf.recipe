@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jamf.GoogleChromePkg</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Apps</string>
+		<key>DOWNLOAD_URL</key>
+		<string>https://dl.google.com/chrome/mac/stable/accept_tos%3Dhttps%253A%252F%252Fwww.google.com%252Fintl%252Fen_ph%252Fchrome%252Fterms%252F%26_and_accept_tos%3Dhttps%253A%252F%252Fpolicies.google.com%252Fterms/googlechrome.pkg</string>
+		<key>NAME</key>
+		<string>Google Chrome</string>
+		<key>PKG_CATEGORY</key>
+		<string>%CATEGORY%</string>
+		<key>STOPPROCESSINGIF_PREDICATE</key>
+		<string>download_changed == FALSE</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.rtrouton.jamf.googlechromepkg</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d1834bfeeba8ff3a9cef947cbbabcf201e65d29b</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahampugh-recipes/JamfUploaderProcessors/JamfCategoryUploader.py</string>
+				<key>sha256_hash</key>
+				<string>aee1da382397eef4afe2e9099035ad6420063c628c6711d8b1f0dc08ec5fcf2c</string>
+			</dict>
+			<key>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d1834bfeeba8ff3a9cef947cbbabcf201e65d29b</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahampugh-recipes/JamfUploaderProcessors/JamfPackageUploader.py</string>
+				<key>sha256_hash</key>
+				<string>e3ca359fe843365a34e5dc542b17d3ad7d57e50a57f2fc36ba0fd43638748d89</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.download.googlechromepkg</key>
+			<dict>
+				<key>git_hash</key>
+				<string>83f0b66496abd578d1c70fca2f6f1a6b204939a5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/GoogleChrome/GoogleChromePkg.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>2de26c035de26d0a4d01ad46ff3d50c0f2d2f555920319c678a55412a42babf5</string>
+			</dict>
+			<key>com.github.autopkg.pkg.googlechromepkg</key>
+			<dict>
+				<key>git_hash</key>
+				<string>dcc3a3ab4edf84503ffb4494d03e74f92dd51cf5</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.recipes/GoogleChrome/GoogleChromePkg.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>6fe33e0aabb8dd9621bfd5a8b482050cdbd955fa549a9cfab9726aa23a2e5353</string>
+			</dict>
+			<key>com.github.rtrouton.jamf.googlechromepkg</key>
+			<dict>
+				<key>git_hash</key>
+				<string>637a3be60909a25c2f20a3dca6dec77324ad8844</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/Jamf_Upload/GoogleChromePkg.jamf.recipe</string>
+				<key>sha256_hash</key>
+				<string>0eb4c9cb52767bdaf10f2cb9c6faee3c059bc4ef2f3ecd94a7f34578abc93ce9</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

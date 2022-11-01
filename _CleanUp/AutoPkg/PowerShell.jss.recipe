@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jss.PowerShell</string>
+	<key>Input</key>
+	<dict>
+		<key>ARCH</key>
+		<string>x64</string>
+		<key>CATEGORY</key>
+		<string>Utilities</string>
+		<key>GITHUB_REPO</key>
+		<string>PowerShell/PowerShell</string>
+		<key>GROUP_NAME</key>
+		<string>%NAME%-update-smart</string>
+		<key>GROUP_TEMPLATE</key>
+		<string>SmartGroupTemplate.xml</string>
+		<key>MAJOR_VERSION</key>
+		<string>7.2</string>
+		<key>NAME</key>
+		<string>PowerShell</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Testing</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>PolicyTemplate.xml</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>PowerShell Core is a cross-platform (Windows, Linux, and macOS) automation and configuration tool/framework that works well with your existing tools and is optimized for dealing with structured data (e.g. JSON, CSV, XML, etc.), REST APIs, and object models. It includes a command-line shell, an associated scripting language and a framework for processing cmdlets.</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>%NAME%.png</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.d33t5.jss.PowerShell</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.d33t5.jss.PowerShell</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8e5e43a7b2b825161ee5b37d30c4f6bcec379d38</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.d33t5-recipes/PowerShell/PowerShell.jss.recipe</string>
+				<key>sha256_hash</key>
+				<string>fe9a7f297f8f9744cabce24e1eae46de752286341cd4c7cd7b2b522c41a4e5fd</string>
+			</dict>
+			<key>com.github.d33t5.pkg.PowerShell</key>
+			<dict>
+				<key>git_hash</key>
+				<string>8e5e43a7b2b825161ee5b37d30c4f6bcec379d38</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.d33t5-recipes/PowerShell/PowerShell.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>5ab3c626ffa7ff7af2a5aea28d0c53c3725877cc68acf86f23431d1ca23afb24</string>
+			</dict>
+			<key>com.github.vmiller.download.PowerShell</key>
+			<dict>
+				<key>git_hash</key>
+				<string>f8818193c9cd335358fc8ad9091d89acb270b730</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.vmiller-recipes/PowerShell/PowerShell.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>ea9cdf413bdf46d0f264c343fe1237c1acdf1b4c9cff9c91f139eea8ac61a05a</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

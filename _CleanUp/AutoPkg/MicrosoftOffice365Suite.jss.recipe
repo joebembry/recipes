@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jss.MicrosoftOffice365Suite</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Productivity</string>
+		<key>DESCRIPTION</key>
+		<string>Microsoft Office 365 is a software suite for word processing, spreadsheets, presentations, graphics and more.</string>
+		<key>DOWNLOAD_URL_BASE</key>
+		<string>https://go.microsoft.com/fwlink/?linkid=</string>
+		<key>GROUP_NAME</key>
+		<string>Update-Smart-%NAME%</string>
+		<key>GROUP_TEMPLATE</key>
+		<string>%RECIPE_DIR%/SmartGroupTemplate.xml</string>
+		<key>ICON</key>
+		<string>%RECIPE_DIR%/MicrosoftOffice365Suite.png</string>
+		<key>ID</key>
+		<string>525133</string>
+		<key>NAME</key>
+		<string>Microsoft Office 365 Suite</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Testing</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>%RECIPE_DIR%/PolicyTemplate.xml</string>
+		<key>SOFTWARETITLE1</key>
+		<string>Office</string>
+		<key>SOFTWARETITLE2</key>
+		<string>2021</string>
+		<key>VENDOR</key>
+		<string>Microsoft</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.rtrouton.jss.MicrosoftOffice365Suite</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>OfficeSuiteSKULessVersionProvider</key>
+			<dict>
+				<key>git_hash</key>
+				<string>c685110c3fc7992074d18d80f8cbbe6f2b88b881</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/MicrosoftOffice365Suite/OfficeSuiteSKULessVersionProvider.py</string>
+				<key>sha256_hash</key>
+				<string>2363654dc7d3d494511f86fd30bb66fa393da0ef8871533e7185875dbbdd7ff9</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.rtrouton.download.MicrosoftOffice365Suite</key>
+			<dict>
+				<key>git_hash</key>
+				<string>f20c76b590938a848c61201567a728d44b328ccc</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/MicrosoftOffice365Suite/MicrosoftOffice365Suite.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>84ff656c17788f078092c6232350ce918f55f3388201d618546525812af0b57c</string>
+			</dict>
+			<key>com.github.rtrouton.jss.MicrosoftOffice365Suite</key>
+			<dict>
+				<key>git_hash</key>
+				<string>7616f15fc53f80a0455b007625e8edd6194d8efd</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/JSS/MicrosoftOffice365Suite.jss.recipe</string>
+				<key>sha256_hash</key>
+				<string>68b2250d8bbcbb654f1938c271377be84a271380cf7c379bfd42e9ebac95a772</string>
+			</dict>
+			<key>com.github.rtrouton.pkg.MicrosoftOffice365Suite</key>
+			<dict>
+				<key>git_hash</key>
+				<string>5af8aa3a49d2d1323ed34d164def0ff3fe47e5d8</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.rtrouton-recipes/MicrosoftOffice365Suite/MicrosoftOffice365Suite.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>a5d6f866c9441bd7c63d7a5ec2046628fe3a34042e3434febc828c5f8cf75dde</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
