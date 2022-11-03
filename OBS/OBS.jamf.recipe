@@ -17,7 +17,7 @@
 		<key>NAME</key>
 		<string>OBS</string>
 		<key>POLICY_CATEGORY</key>
-		<string>Testing</string>
+		<string>Productivity</string>
 		<key>POLICY_NAME</key>
 		<string>Install Latest %NAME%</string>
 		<key>POLICY_TEMPLATE</key>
@@ -29,7 +29,7 @@
 		<key>SELF_SERVICE_ICON</key>
 		<string>%NAME%.png</string>
 		<key>TESTING_GROUP_NAME</key>
-		<string>Testing</string>
+		<string>testing</string>
 		<key>UPDATE_PREDICATE</key>
 		<string>pkg_uploaded == False</string>
 	</dict>
