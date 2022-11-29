@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
+	<key>Description</key>
+	<string>Downloads the latest version of Meta Spark Player.</string>
+	<key>Identifier</key>
+	<string>edu.monmouth.im.autopkg.download.MetaSparkPlayer</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>Meta Spark Player</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>filename</key>
+				<string>%NAME%.dmg</string>
+				<key>url</key>
+				<string>https://scontent-lga3-2.xx.fbcdn.net/v/t39.10537-6/10000000_1168462334093286_4527352049488556791_n.dmg/SparkARPlayer_v152.dmg?_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=379304&amp;_nc_ohc=JR5eH2hbBuwAX_wSrEK&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zor=4&amp;_nc_ht=scontent-lga3-2.xx&amp;oh=00_AfC2uDZy_bGu0Qw_5YhwRWRBvyK6IgJkuYD_3rrP9z9-aQ&amp;oe=638B6E84</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_path</key>
+				<string>%pathname%/Meta Spark Player.app</string>
+				<key>requirement</key>
+				<string>identifier "com.facebook.spark.desktopplayer" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = V9WTTPBFK9</string>
+			</dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_plist_path</key>
+				<string>%pathname%/Meta Spark Player.app/Contents/Info.plist</string>
+				<key>plist_version_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+			<key>Processor</key>
+			<string>Versioner</string>
+		</dict>
+	</array>
+</dict>
+</plist>

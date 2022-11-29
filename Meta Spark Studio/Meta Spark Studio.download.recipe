@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
+	<key>Description</key>
+	<string>Downloads the latest version of Meta Spark Studio.</string>
+	<key>Identifier</key>
+	<string>edu.monmouth.im.autopkg.download.MetaSparkStudio</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>Meta Spark Studio</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>filename</key>
+				<string>%NAME%.dmg</string>
+				<key>url</key>
+				<string>https://scontent-lga3-2.xx.fbcdn.net/v/t39.10537-6/10000000_540883197572404_3912724024315367207_n.dmg/SparkARStudio_v152.dmg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=379304&amp;_nc_ohc=PVdcEhpB7EMAX-wbA86&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zor=4&amp;_nc_ht=scontent-lga3-2.xx&amp;oh=00_AfCrYOwY1aiJhvn8pqkvNnTBPDB0ht1pOTg3JtNrALGaOA&amp;oe=638BCCA5</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_path</key>
+				<string>%pathname%/Meta Spark Studio.app</string>
+				<key>requirement</key>
+				<string>identifier "com.facebook.arstudio.skylight" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = V9WTTPBFK9</string>
+			</dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_plist_path</key>
+				<string>%pathname%/Meta Spark Studio.app/Contents/Info.plist</string>
+				<key>plist_version_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+			<key>Processor</key>
+			<string>Versioner</string>
+		</dict>
+	</array>
+</dict>
+</plist>
