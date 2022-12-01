@@ -9,7 +9,7 @@
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>SFSymbols4</string>
+		<string>%NAME%</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
