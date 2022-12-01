@@ -25,5 +25,6 @@
                 <key>source_pkg</key>
                 <string>%pathname%</string>
             </dict>
+	</array>		
 </dict>
 </plist>
