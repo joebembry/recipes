@@ -23,7 +23,7 @@
 				<key>extract_root</key>
 				<string>%RECIPE_CACHE_DIR%/downloads/UNPACK</string>
 				<key>pkg_path</key>
-				<string>%pathname%/SF*.pkg</string>
+				<string>%pathname%/SFSymbols.pkg</string>
 			</dict>
 			<key>Processor</key>
 			<string>PkgExtractor</string>
