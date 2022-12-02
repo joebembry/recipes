@@ -20,8 +20,18 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>extract_root</key>
+				<key>source_pkg</key>
+				<string>%pathname%/*.pkg</string>
+				<key>pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/downloads/UNPACK</string>
+			</dict>
+			<key>Processor</key>
+			<string>PkgCopier</string>
+		</dict><dict>
+			<key>Arguments</key>
+			<dict>
+				<key>extract_root</key>
+				<string>%RECIPE_CACHE_DIR%/downloads/INFO</string>
 				<key>pkg_path</key>
 				<string>%pathname%/SFSymbols.pkg</string>
 			</dict>
