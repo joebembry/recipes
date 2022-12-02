@@ -32,7 +32,7 @@
 				<key>destination_path</key>
 				<string>%RECIPE_CACHE_DIR%/downloads/UNPACK</string>
 				<key>flat_pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/*.dmg</string>
+				<string>%RECIPE_CACHE_DIR%/.dmg</string>
 				<key>purge_destination</key>
 				<string>true</string>
 			</dict>
