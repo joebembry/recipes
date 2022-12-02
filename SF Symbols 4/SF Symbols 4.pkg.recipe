@@ -32,7 +32,7 @@
 				<key>destination_path</key>
 				<string>%RECIPE_CACHE_DIR%/downloads/UNPACK</string>
 				<key>flat_pkg_path</key>
-				<string>%pkg_path%</string>
+				<string>%pkg_path%/SFSymbols.pkg</string>
 				<key>purge_destination</key>
 				<string>true</string>
 			</dict>
