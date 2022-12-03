@@ -38,10 +38,6 @@
         <dict>
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
-            <key>Arguments</key>
-            <dict>
-               <key>DISPLAY_NAME</key>
-               <string>%NAME%</string>
         </dict>
         <dict>
             <key>Processor</key>
