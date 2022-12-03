@@ -85,7 +85,7 @@
 				<key>sha256_hash</key>
 				<string>26076f166f12099ad6a9247260d348ae89eb1799e69ffa8e3d1afbe91e16f218</string>
 			</dict>
-			<key>edu.monmouth.im.autopkg.download.OBS</key>
+			<key>com.github.joebembry-recipes.download.OBS</key>
 			<dict>
 				<key>git_hash</key>
 				<string>94c9741057cdf9d53996881c6d3eb030505775b9</string>
@@ -94,7 +94,7 @@
 				<key>sha256_hash</key>
 				<string>d7df2265b6582206eb3d250a5109d54b7f0e811e985862c6264848c38d3f4a16</string>
 			</dict>
-			<key>edu.monmouth.im.autopkg.pkg.OBS</key>
+			<key>com.github.joebembry-recipes.pkg.OBS</key>
 			<dict>
 				<key>git_hash</key>
 				<string>94c9741057cdf9d53996881c6d3eb030505775b9</string>

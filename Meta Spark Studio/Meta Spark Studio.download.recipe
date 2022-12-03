@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Meta Spark Studio.</string>
 	<key>Identifier</key>
-	<string>edu.monmouth.im.autopkg.download.MetaSparkStudio</string>
+	<string>com.github.joebembry-recipes.download.MetaSparkStudio</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>

@@ -36,7 +36,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>edu.monmouth.im.autopkg.pkg.OBS</string>
+	<string>com.github.joebembry-recipes.pkg.OBS</string>
 	<key>Process</key>
 	<array>
 		<dict>

@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Meta Spark Player.</string>
 	<key>Identifier</key>
-	<string>edu.monmouth.im.autopkg.download.MetaSparkPlayer</string>
+	<string>com.github.joebembry-recipes.download.MetaSparkPlayer</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>

@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of SF Symbols 4</string>
 	<key>Identifier</key>
-	<string>edu.monmouth.im.autopkg.pkg.SF Symbols 4</string>
+	<string>com.github.joebembry-recipes.pkg.SFSymbols4</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -14,7 +14,7 @@
 	<key>MinimumVersion</key>
 		<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>edu.monmouth.im.autopkg.download.SF Symbols 4</string>
+	<string>com.github.joebembry-recipes.download.SFSymbols4</string>
 	<key>Process</key>
 			<array>
 		<dict>

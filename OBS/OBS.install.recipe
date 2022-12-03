@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Installs the latest version of OBS.</string>
 	<key>Identifier</key>
-	<string>edu.monmouth.im.autopkg.install.OBS</string>
+	<string>com.github.joebembry-recipes.install.OBS</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>edu.monmouth.im.autopkg.download.OBS</string>
+	<string>com.github.joebembry-recipes.download.OBS</string>
 	<key>Process</key>
 	<array>
 		<dict>

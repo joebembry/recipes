@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Meta Spark Player and creates a package.</string>
 	<key>Identifier</key>
-	<string>edu.monmouth.im.autopkg.pkg.MetaSparkPlayer</string>
+	<string>com.github.joebembry-recipes.pkg.MetaSparkPlayer</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>edu.monmouth.im.autopkg.download.MetaSparkPlayer</string>
+	<string>com.github.joebembry-recipes.download.MetaSparkPlayer</string>
 	<key>Process</key>
 	<array>
 		<dict>

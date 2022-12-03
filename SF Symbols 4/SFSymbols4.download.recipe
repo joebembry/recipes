@@ -5,11 +5,11 @@
 	<key>Description</key>
 	<string>Downloads the latest version of SF Symbols 4</string>
 	<key>Identifier</key>
-	<string>edu.monmouth.im.autopkg.download.SF Symbols 4</string>
+	<string>com.github.joebembry-recipes.download.SFSymbols4</string>
 	<key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>SF Symbols 4</string>
+        <string>SFSymbols4</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.0.0</string>
@@ -38,6 +38,10 @@
         <dict>
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
+            <key>Arguments</key>
+            <dict>
+               <key>DISPLAY_NAME</key>
+               <string>%NAME%</string>
         </dict>
         <dict>
             <key>Processor</key>

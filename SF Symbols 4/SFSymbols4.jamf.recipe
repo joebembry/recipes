@@ -2,10 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Comment</key>
-	<string>Recipe automatically generated from edu.monmouth.im.autopkg.pkg.SF Symbols 4 by JamfRecipeMaker</string>
 	<key>Identifier</key>
-	<string>edu.monmouth.gitlab.im-computer-support.autopkg-recipes.jamf.SFSymbols4</string>
+	<string>com.github.joebembry-recipes.jamf.SFSymbols4</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -36,7 +34,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>edu.monmouth.im.autopkg.pkg.SF Symbols 4</string>
+	<string>com.github.joebembry-recipes.pkg.SFSymbols4</string>
 	<key>Process</key>
 	<array>
 		<dict>
