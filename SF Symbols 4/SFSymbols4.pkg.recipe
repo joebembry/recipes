@@ -23,7 +23,7 @@
             <key>Arguments</key>
             <dict>
                 <key>predicate</key>
-                <string>download_changed == TRUE</string>
+                <string>download_changed == False</string>
             </dict>
         </dict>
 		<dict>
@@ -54,9 +54,9 @@
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_payload_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/UNPACK</string>
+				<string>%RECIPE_CACHE_DIR%/downloads/UNPACK/SFSymbols.pkg/Payload</string>
 				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/PAYLOAD</string>
+				<string>%RECIPE_CACHE_DIR%/downloads/UNPACK/App</string>
 				<key>purge_destination</key>
 				<string>true</string>
 			</dict>
