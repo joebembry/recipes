@@ -70,7 +70,7 @@
 				<string>%RECIPE_CACHE_DIR%/downloads/App/SF\ Symbols.app</string>
 			</dict>
 			<key>Processor</key>
-			<string>PkgPayloadUnpacker</string>
+			<string>PlistReader</string>
 		</dict>
 		<dict>
 			<key>Arguments</key>
