@@ -23,7 +23,7 @@
             <key>Arguments</key>
             <dict>
                 <key>predicate</key>
-                <string>download_changed == False</string>
+                <string>download_changed == True</string>
             </dict>
         </dict>
 		<dict>
