@@ -45,7 +45,7 @@
 				<key>flat_pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%.pkg</string>
 				<key>purge_destination</key>
-				<string>true</string>
+				<string>false</string>
 			</dict>
 			<key>Processor</key>
 			<string>FlatPkgUnpacker</string>
@@ -54,9 +54,9 @@
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_payload_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/UNPACK/SFSymbols.pkg/Payload</string>
+				<string>%RECIPE_CACHE_DIR%/downloads/UNPACK/SFSymbols.pkg</string>
 				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/UNPACK/App</string>
+				<string>%RECIPE_CACHE_DIR%/downloads/App</string>
 				<key>purge_destination</key>
 				<string>false</string>
 			</dict>
@@ -67,7 +67,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>info_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/UNPACK/App/SF\ Symbols.app</string>
+				<string>%RECIPE_CACHE_DIR%/downloads/App/SF\ Symbols.app</string>
 			</dict>
 			<key>Processor</key>
 			<string>PkgPayloadUnpacker</string>
