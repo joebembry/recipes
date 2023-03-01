@@ -31,70 +31,11 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%.pkg</string>
-				<key>source_pkg</key>
-				<string>%pathname%/*.pkg</string>
-			</dict>
-			<key>Processor</key>
-			<string>PkgCopier</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/UNPACK</string>
-				<key>flat_pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%.pkg</string>
-				<key>purge_destination</key>
-				<string>false</string>
-			</dict>
-			<key>Processor</key>
-			<string>FlatPkgUnpacker</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>pkg_payload_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/UNPACK/HOBOware.pkg/payload</string>
-				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/App</string>
-				<key>purge_destination</key>
-				<string>false</string>
-			</dict>
-			<key>Processor</key>
-			<string>PkgPayloadUnpacker</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
 				<key>info_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/App/Applications/HOBOware.app/Contents/Info.plist</string>
+				<string>%RECIPE_CACHE_DIR%/payload/Package_contents/HOBOware.app/Contents/Info.plist</string>
 			</dict>
 			<key>Processor</key>
 			<string>PlistReader</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>packageinfo_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/UNPACK/HOBOware.pkg/PackageInfo</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.github.autopkg.novaksam-recipes.Processors/PackageInfoReader</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>path_list</key>
-				<array>
-					<string>%RECIPE_CACHE_DIR%/downloads/UNPACK</string>
-				</array>
-			</dict>
-			<key>Comment</key>
-			<string>Gotta clean up after myself!</string>
-			<key>Processor</key>
-			<string>PathDeleter</string>
 		</dict>
 	</array>
 </dict>
