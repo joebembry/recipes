@@ -1,0 +1,13 @@
+Comment: Recipe automatically generated from com.github.ahousseini-recipes.pkg.Krita by JamfRecipeMaker
+Identifier: com.github.autopkg.grahampugh-recipes.jamf.Krita-pkg-upload
+ParentRecipe: com.github.ahousseini-recipes.pkg.Krita
+MinimumVersion: '2.3'
+
+Input:
+  NAME: Krita
+  CATEGORY: Applications
+
+Process:
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfPackageUploader
+  Arguments:
+    pkg_category: '%CATEGORY%'
