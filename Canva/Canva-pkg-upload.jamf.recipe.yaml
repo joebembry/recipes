@@ -1,0 +1,13 @@
+Comment: Recipe automatically generated from com.github.moofit-recipes.pkg.Canva by JamfRecipeMaker
+Identifier: com.github.autopkg.grahampugh-recipes.jamf.Canva-pkg-upload
+ParentRecipe: com.github.moofit-recipes.pkg.Canva
+MinimumVersion: '2.3'
+
+Input:
+  NAME: Canva
+  CATEGORY: Applications
+
+Process:
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfPackageUploader
+  Arguments:
+    pkg_category: '%CATEGORY%'
