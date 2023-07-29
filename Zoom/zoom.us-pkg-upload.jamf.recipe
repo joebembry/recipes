@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jamf.us-pkg-upload.zoom</string>
+	<key>Input</key>
+	<dict>
+		<key>BUNDLE_ID</key>
+		<string>us.zoom.xos</string>
+		<key>CATEGORY</key>
+		<string>Productivity</string>
+		<key>DOWNLOAD_URL</key>
+		<string>https://zoom.us/client/latest/ZoomInstallerIT.pkg</string>
+		<key>NAME</key>
+		<string>zoom.us</string>
+		<key>USER_AGENT</key>
+		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.28.10 (KHTML, like Gecko) Version/6.0.3 Safari/536.28.10</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.grahampugh-recipes.jamf.zoom.us-pkg-upload</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</key>
+			<dict>
+				<key>git_hash</key>
+				<string>d1834bfeeba8ff3a9cef947cbbabcf201e65d29b</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahampugh-recipes/JamfUploaderProcessors/JamfCategoryUploader.py</string>
+				<key>sha256_hash</key>
+				<string>aee1da382397eef4afe2e9099035ad6420063c628c6711d8b1f0dc08ec5fcf2c</string>
+			</dict>
+			<key>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</key>
+			<dict>
+				<key>git_hash</key>
+				<string>ab243ec4077657cd097db3525df42ed7b41022dd</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahampugh-recipes/JamfUploaderProcessors/JamfPackageUploader.py</string>
+				<key>sha256_hash</key>
+				<string>afa74047c22a5c01a1eb1e115512c019d1921db095ebe2ffe20e632674354543</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.autopkg.grahampugh-recipes.jamf.zoom.us-pkg-upload</key>
+			<dict>
+				<key>git_hash</key>
+				<string>0fcd574bf1e388a81f6b8c84e0a6f913170721ac</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahampugh-recipes/Jamf_Package_Upload_Only_Recipes/zoom.us-pkg-upload.jamf.recipe</string>
+				<key>sha256_hash</key>
+				<string>b108be4e70188ec0b41defb9f23d3ebfa3a024c1e1a3c18110135e7f44c140f5</string>
+			</dict>
+			<key>com.github.hansen-m.download.zoomus</key>
+			<dict>
+				<key>git_hash</key>
+				<string>10449f987236d00d58f76e190cb85fe97e3d70a0</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.hansen-m-recipes/Zoom/Zoom.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>a673449c295162ff4bd38348811f0c831b1f0bcff2b435844c2ed017703dbbac</string>
+			</dict>
+			<key>com.github.homebysix.pkg.Zoom</key>
+			<dict>
+				<key>git_hash</key>
+				<string>3fc6a51644cfa9b791d2ff3ab6434390b073131c</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Zoom/Zoom.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>016702213ba03e795107961d41e13173c2d5a95476c74ba9f2b596c1c441c9ff</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
