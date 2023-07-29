@@ -1,0 +1,13 @@
+Comment: Recipe automatically generated from com.github.hansen-m.pkg.Kindle by JamfRecipeMaker
+Identifier: com.github.autopkg.grahampugh-recipes.jamf.Kindle-pkg-upload
+ParentRecipe: com.github.hansen-m.pkg.Kindle
+MinimumVersion: '2.3'
+
+Input:
+  NAME: Kindle
+  CATEGORY: Applications
+
+Process:
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfPackageUploader
+  Arguments:
+    pkg_category: '%CATEGORY%'
