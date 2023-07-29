@@ -1,0 +1,13 @@
+Comment: Recipe automatically generated from com.github.dataJAR-recipes.pkg.Azul Zulu OpenJDK 11 LTS by JamfRecipeMaker
+Identifier: com.github.autopkg.grahampugh-recipes.jamf.AzulZuluOpenJDK11LTS-pkg-upload
+ParentRecipe: com.github.dataJAR-recipes.pkg.Azul Zulu OpenJDK 11 LTS
+MinimumVersion: '2.3'
+
+Input:
+  NAME: AzulZuluOpenJDK11LTS
+  CATEGORY: Applications
+
+Process:
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfPackageUploader
+  Arguments:
+    pkg_category: '%CATEGORY%'
