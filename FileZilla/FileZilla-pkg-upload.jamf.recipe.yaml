@@ -1,0 +1,13 @@
+Comment: Recipe automatically generated from com.github.grahampugh.recipes.pkg.FileZilla by JamfRecipeMaker
+Identifier: com.github.autopkg.grahampugh-recipes.jamf.FileZilla-pkg-upload
+ParentRecipe: com.github.grahampugh.recipes.pkg.FileZilla
+MinimumVersion: '2.3'
+
+Input:
+  NAME: FileZilla
+  CATEGORY: Applications
+
+Process:
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfPackageUploader
+  Arguments:
+    pkg_category: '%CATEGORY%'
